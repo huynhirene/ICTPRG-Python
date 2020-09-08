@@ -1,20 +1,16 @@
-# Copy and Modify Question 3, to support the following username password combinations:
-# bob : password1234
-# fred : happyPass122
-# lock: passwithlock44
-# Please ensure that the password only works with the corresponding username.
+# Write a program that counts from 0 to 25, outputting each number on the same line, separated by commas.
 
-username = str(input("Enter username: "))
-password = str(input("Enter password: "))
+i = 0
 
-if username == "bob" and password == "password1234":
-    print("Access granted!")
-elif username == "fred" and password == "happyPass122":
-    print("Access granted!")
-elif username == "lock" and password == "passwithlock44":
-    print("Access granted!")
-else:
-    print("Access denied.")
+while i <= 25:
+    print(i, end = ", ")
+    i = i + 1
+
+#OR
 
 
-
+for numbers in range(0,26):
+    print(numbers, end = ", ")
+    
+  
+    

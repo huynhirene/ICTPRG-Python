@@ -1,23 +1,26 @@
-# Write a program that can grade a student based upon a percentage grade. Example:
-# What was your grade: 99
-# You will receive a "High Distinction"
-# Please use the following grade table within your application:
-# High Distinction	100 - 90
-# Distinction	89- 80
-# Credit	79 - 70
-# Pass	69 - 50
+# Write a program that keeps asking the user for a number, and adds it to a total. Ensure that pressing x stops entering numbers. Example:
+# Enter some numbers (Press x to stop):
+# 1
+# 3
+# 66
+# x
+# Total: 70
 
-grade = int(input("What was your grade? "))
+# Input numbers 
+# If numbers don't equal x continue 
+# If numbers equal x  
+# Print totals 
 
-if grade >= 90:
-    print("You will receive a 'High Distinction'")
-elif grade >=80:
-    print("You will receive a 'Distinction'")
-elif grade >= 70:
-    print("You will recive a 'Credit'")
-elif grade >=50:
-    print("You will receive a 'Pass'")
-else:
-    print("You have failed. Please speak to teacher.")
 
+numbers = 0
+total_numbers = 0
+
+while numbers != "x":
+    numbers = input("Enter some numbers (Press x to stop): ")
+    if numbers != "x":
+        total_numbers = total_numbers + int(numbers)
+    else:
+        print("Total numbers: " + str(total_numbers))
+    
+        
 

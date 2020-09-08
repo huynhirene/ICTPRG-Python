@@ -1,20 +1,44 @@
-# Write a program that could be used for an (unsecure) login, with a username and password. For example:
-# -------------------------------------
-# Enter username: bob
-# Enter password: password1234
-# Access Granted!
-# -------------------------------------
-# Enter username: frank
-# Enter password: invalidpass
-# Access Denied!
-# -------------------------------------
-# (Reference your algorithm from the 'Introduction to Algorithms' Quiz)
+# Write a program that keeps asking a user for a number, until the number is within the range of 50 and 70. Example:
+# Enter a number: 42
+# Not within range.
+# Enter a number:53
+# Within range.
 
-username = str(input("Enter username: "))
-password = str(input("Enter password: "))
+number_range1 = 0
 
-if username == "bob" and password == "password1234":
-    print("Access granted!")
-else:
-    print("Access denied.")
+while (True):
+    number_range1 = int(input("Enter a number: "))
+    if number_range1 >= 50 and number_range1 <= 70:
+       print("Within range.")
+    else:
+        print("Not within range.")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+    
+
+
+
+
+
+
+
+
 
