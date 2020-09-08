@@ -1,11 +1,14 @@
-# Write a program that asks the user for their name, 
-# checks if their name is either "frank" or "george" and if it is, greet them by their name.
-# (Reference your algorithm from the 'Introduction to Algorithms' Quiz)
+# Write a program that counts from 0 to 25, outputting each number on a new line.
 
-name_user = input("Enter your name: ")
+num = 0
 
-if name_user == "frank" or name_user == "george":
-    print("Hello, how are you? " + name_user) 
-else:
-    print("Do I know you?")
+while num <= 26:
+    print(num)
+    num = num + 1 
+    if num == 26:
+        break
 
+# OR
+
+for numbers in range(0,26):
+    print(numbers)
